@@ -1,4 +1,4 @@
-package tag2.pattern;
+package tag2.singleton;
 
 public class Spieleserver {
 

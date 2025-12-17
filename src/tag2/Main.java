@@ -2,14 +2,14 @@ package tag2;
 
 import java.awt.Color;
 import java.util.ArrayList;
-import tag2.pattern.Spieleserver;
-import tag2.pattern.builder.Builder;
-import tag2.pattern.builder.Haus;
-import tag2.pattern.builder.HouseBuilder;
-import tag2.pattern.builder.factory.AutoHaus;
-import tag2.pattern.builder.factory.Fahrzeug;
-import tag2.pattern.builder.factory.Hangar;
-import tag2.pattern.builder.factory.Showroom;
+import tag2.singleton.Spieleserver;
+import tag2.builder.Haus;
+import tag2.builder.HouseBuilder;
+import tag2.factory.AutoHaus;
+import tag2.factory.Fahrzeug;
+import tag2.factory.Hangar;
+import tag2.factory.Showroom;
+import tag2.factory.Werft;
 
 public class Main  extends Object{
 

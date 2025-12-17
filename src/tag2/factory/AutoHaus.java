@@ -1,4 +1,4 @@
-package tag2.pattern.builder.factory;
+package tag2.factory;
 
 public class AutoHaus extends Showroom{
   @Override

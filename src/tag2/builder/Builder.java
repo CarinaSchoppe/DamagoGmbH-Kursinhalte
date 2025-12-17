@@ -1,4 +1,4 @@
-package tag2.pattern.builder;
+package tag2.builder;
 
 public interface Builder<T> {
   
