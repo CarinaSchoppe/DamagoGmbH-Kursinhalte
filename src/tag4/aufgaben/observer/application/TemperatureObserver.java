@@ -5,4 +5,6 @@ public interface TemperatureObserver {
 
   void onTemperatureChanged(int newTemperature);
 
+  void onTemperatureChanged(int oldTemperature, int newTemperature);
+
 }

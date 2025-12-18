@@ -8,6 +8,7 @@ public class GamingPC {
 
   private final List<TemperatureObserver> observers = new ArrayList<>();
   private int temperature;
+  private final List<Integer> temperatureHistory = new ArrayList<>();
 
   public void addObserver(TemperatureObserver observer) {
     observers.add(observer);
@@ -25,9 +26,17 @@ public class GamingPC {
     if (newTemp == this.temperature) {
       return;
     }
+
+    if (newTemp < 0) {
+      return;
+    }
+    if (newTemp < temperature) {
+      throw new IllegalArgumentException("Temperature can't be lower than current temperature");
+    }
     this.temperature = newTemp;
     System.out.println("Temperature changed to " + temperature);
     notifyObservers(newTemp);
+    temperatureHistory.add(newTemp);
   }
 
   private void notifyObservers(int newTemp) {

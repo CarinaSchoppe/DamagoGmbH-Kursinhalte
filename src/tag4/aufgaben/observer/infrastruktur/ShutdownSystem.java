@@ -9,4 +9,9 @@ public class ShutdownSystem implements TemperatureObserver {
       System.out.println("[SHUTDOWN] System will be shut down!");
     }
   }
+
+  @Override
+  public void onTemperatureChanged(int oldTemperature, int newTemperature) {
+
+  }
 }

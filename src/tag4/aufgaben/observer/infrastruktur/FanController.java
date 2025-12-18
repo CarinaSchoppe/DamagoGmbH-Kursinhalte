@@ -10,4 +10,9 @@ public class FanController implements TemperatureObserver {
       System.out.println("[FAN] Fan speed increased!");
     }
   }
+
+  @Override
+  public void onTemperatureChanged(int oldTemperature, int newTemperature) {
+
+  }
 }

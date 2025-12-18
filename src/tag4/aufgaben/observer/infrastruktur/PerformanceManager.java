@@ -10,4 +10,9 @@ public class PerformanceManager implements TemperatureObserver {
       System.out.println("[PERFORMANCE] Performance is affected! Framerate reduced to 30 fps");
     }
   }
+
+  @Override
+  public void onTemperatureChanged(int oldTemperature, int newTemperature) {
+
+  }
 }
