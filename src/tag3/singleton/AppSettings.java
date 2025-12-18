@@ -1,4 +1,4 @@
-package tag3.aufgaben.singleton;
+package tag3.singleton;
 
 import java.util.ArrayList;
 import java.util.HashMap;

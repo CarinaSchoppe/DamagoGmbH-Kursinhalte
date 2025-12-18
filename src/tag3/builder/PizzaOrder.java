@@ -1,4 +1,4 @@
-package tag3.aufgaben.builder;
+package tag3.builder;
 
 public class PizzaOrder {
 
