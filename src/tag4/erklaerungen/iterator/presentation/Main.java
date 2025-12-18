@@ -36,10 +36,6 @@ public class Main {
     runTour("Maps", parisTour.mapsIterator());
     runTour("Random Walk", parisTour.randomWalkIterator(3533424));
 
-
-    for (Stop stop : rom) {
-
-    }
   }
 
   private static void runTour(String label, TourIterator iterator) {
