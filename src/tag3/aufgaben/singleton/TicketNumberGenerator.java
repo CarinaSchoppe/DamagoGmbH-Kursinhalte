@@ -1,4 +1,4 @@
-package tag3.aufgaben;
+package tag3.aufgaben.singleton;
 
 
 class SupportService {

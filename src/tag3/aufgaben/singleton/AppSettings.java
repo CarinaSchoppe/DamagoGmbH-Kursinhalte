@@ -1,4 +1,4 @@
-package tag3.aufgaben;
+package tag3.aufgaben.singleton;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class AppSettings {
   record AufgabenspezifischeElemente(String key, String value) {
   }
 
-  private List<AufgabenspezifischeElemente> settings = new ArrayList<>();
+  private final List<AufgabenspezifischeElemente> settings = new ArrayList<>();
 
   public String getValue1(String key) {
     var result =
