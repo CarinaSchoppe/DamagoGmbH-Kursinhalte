@@ -10,7 +10,7 @@ import java.util.List;
 public class DistanceIterator extends Iterator implements TourIterator {
 
 
-  private Point position;
+  private final Point position;
 
   public DistanceIterator(List<fi15ae.kw51.tag4.aufgaben.iterator.domain.Stop> stops,
                           Point position) {
@@ -34,8 +34,7 @@ public class DistanceIterator extends Iterator implements TourIterator {
     stops.sort(Comparator.comparingDouble(stop -> DistanceCalculator.calculateDistance(position,
         stop.point())));
 
-    var next = stops.removeFirst();
-    position = next.point();
-    return next;
+
+    return null;
   }
 }

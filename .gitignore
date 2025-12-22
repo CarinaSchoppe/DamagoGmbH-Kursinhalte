@@ -249,3 +249,6 @@ gradle-app.setting
 # Eclipse Core
 # JDT-specific (Eclipse Java Development Tools)
 
+
+# Ignore Gradle build output directory
+build

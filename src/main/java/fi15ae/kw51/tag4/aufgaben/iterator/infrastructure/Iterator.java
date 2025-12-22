@@ -1,7 +1,6 @@
 package fi15ae.kw51.tag4.aufgaben.iterator.infrastructure;
 
 import fi15ae.kw51.tag4.aufgaben.iterator.domain.Stop;
-import java.net.ServerSocket;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,9 +21,6 @@ public abstract class Iterator {
 
       var arm = "Kamera";   //<--- erstelle eine variable mit wert Hallo x -> "Hallo"
       arm = "Cola Flasche";    // <--- nimm den X Zeiger
-
-
-      var server = new ServerSocket();
 
 
     }

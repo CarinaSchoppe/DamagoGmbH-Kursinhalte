@@ -4,14 +4,25 @@ plugins {
     id 'application'
 }
 
+version = '1.0'
+group = 'fi15ae'
+
+
 repositories {
     mavenCentral()
 }
 
-dependencies {
+test {
+    useJUnitPlatform()
+}
 
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:6.0.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 application {
     mainClass = 'fi15ae.kw52.Main'
 }
+
+
