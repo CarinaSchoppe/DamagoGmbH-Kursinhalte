@@ -1,9 +1,14 @@
 package fi15ae.kw51.tag3.builder;
 
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Range;
+
 public class User {
 
 
   //felder
+  @NotNull
   private final String username;
   private final String email;
   private final int age;
@@ -37,7 +42,8 @@ public class User {
 
     //optionalen Felder
 
-    public Builder email(String email) {
+    @Contract("null -> fail")
+    public Builder email(@NotNull String email) {
       if (email != null && email.contains("@")) {
         this.email = email;
         return this;
@@ -46,15 +52,16 @@ public class User {
 
     }
 
+    @Range(from = 0, to = 150)
     public Builder age(int age) {
-      if (age < 0) {
+      if (age < 0 || age > 150) {
         throw new IllegalArgumentException("age darf nicht negativ sein");
       }
       this.age = age;
       return this;
     }
 
-    public Builder city(String city) {
+    public Builder city(@NotNull String city) {
       this.city = city;
       return this;
     }
