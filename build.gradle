@@ -26,10 +26,17 @@ test {
 
 dependencies {
 
+    implementation "org.hibernate.orm:hibernate-core:6.6.40.Final"
+    runtimeOnly "org.hibernate.orm:hibernate-community-dialects:6.6.40.Final" // enthält SQLiteDialect
+
+    runtimeOnly "org.xerial:sqlite-jdbc:3.51.1.0"
+
     implementation 'com.google.code.gson:gson:+'
 
     testImplementation "org.mockito:mockito-core:5.+"
     testImplementation "org.mockito:mockito-junit-jupiter:5+"
+
+    runtimeOnly "org.slf4j:slf4j-simple:2.0.16"
 
     compileOnly 'org.jetbrains:annotations:26.0.2-1' //<----
 
@@ -43,7 +50,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'fi15ae.kw52.tag1.javafx.HelloJavaFX'
+    mainClass = 'fi15ae.kw52.tag2.hibernate.Main'
 }
 
 java {
